@@ -11,6 +11,7 @@ function App() {
 /* Code to get accessibility permission and handle errors */
     try {
       const init_output = await window?.electronDW?.activeWindowWrapper();
+			console.log(init_output);
     } catch (err) {
       console.log("Error in getting active window");
       console.log(err);
