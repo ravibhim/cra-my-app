@@ -70,10 +70,6 @@
           "entitlements": "entitlements.plist",
           "entitlements-inherit": "entitlements.plist",
           "signature-flags": "library"
-        },
-        "osxNotarize": {
-          "appleId": "felix@felix.fun",
-          "appleIdPassword": "my-apple-id-password"
         }
       },
 			"publishers": [
