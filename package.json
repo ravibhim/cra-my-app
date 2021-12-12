@@ -62,7 +62,19 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+				"osxSign": {
+					"identity": "Developer ID Application: Ravi Bhim 3A6E2CK357",
+					"hardened-runtime": true,
+					"entitlements": "entitlements.plist",
+          "entitlements-inherit": "entitlements.plist",
+          "signature-flags": "library"
+				},
+				"osxNotarize": {
+          "appleId": "felix@felix.fun",
+          "appleIdPassword": "my-apple-id-password"
+        }
+			},
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
